@@ -6,8 +6,13 @@
     <meta name="description" content="Kaltura Home Assignment (BM)">
     <meta name="author" content="Barak Michaeli">
     <title>Kaltura | Virtual Events</title>
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('vendor/bootstrap/css/bootstrap.css') }}" rel="stylesheet">
+    @if(parse_url(url('/'), PHP_URL_SCHEME) == 'HTTPS')
+        <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('vendor/bootstrap/css/bootstrap.css') }}">
+    @else
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('vendor/bootstrap/css/bootstrap.css') }}" rel="stylesheet">
+    @endif
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
