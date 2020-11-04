@@ -1,19 +1,19 @@
-require('./bootstrap');
-
 import Vue from 'vue'
+import 'vue-loaders/dist/vue-loaders.css';
+import VueLoaders from 'vue-loaders';
+import Axios from 'axios'
+import App from './pages/Entries'
 
-import VueRouter from 'vue-router'
-Vue.use(VueRouter)
-import routes from './routes'
-
-import Vuetify from 'vuetify'
-Vue.use(Vuetify)
-
-import App from './components/App.vue'
+Vue.use(VueLoaders);
+Vue.use({
+    install (Vue) {
+        Vue.prototype.$axios = Axios.create({
+            baseURL: process.env.NODE_ENV === 'production' ? "" : 'https://localhost/kaltura/public/api/'
+        })
+    }
+})
 
 const app = new Vue({
     el: '#app',
-    components: { App },
-    router: new VueRouter(routes),
-    vuetify: new Vuetify()
+    components: { App }
 })

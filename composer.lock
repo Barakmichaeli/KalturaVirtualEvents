@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d0c0458cd7bf0aa562d0e4f09f6d9d59",
+    "content-hash": "80e321d6699fa405e254b81201dae965",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -740,6 +740,50 @@
                 "url"
             ],
             "time": "2019-07-01T23:21:34+00:00"
+        },
+        {
+            "name": "kaltura/api-client-library",
+            "version": "v16.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kaltura/KalturaGeneratedAPIClientsPHP53.git",
+                "reference": "a74cef592770a72e3c040534ae0c7d755860b912"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kaltura/KalturaGeneratedAPIClientsPHP53/zipball/a74cef592770a72e3c040534ae0c7d755860b912",
+                "reference": "a74cef592770a72e3c040534ae0c7d755860b912",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Kaltura": "library"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Kaltura",
+                    "homepage": "http://www.kaltura.org/"
+                }
+            ],
+            "description": "An auto generated Composer package for the Kaltura API client library",
+            "keywords": [
+                "api",
+                "client library",
+                "kaltura",
+                "open source video",
+                "video",
+                "video platform"
+            ],
+            "time": "2020-10-26T17:25:46+00:00"
         },
         {
             "name": "laravel/framework",
