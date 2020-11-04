@@ -1,2 +1,3 @@
+# Kaltura Virtual Events FS (Home assignment)
 
-# Kalura Home Assignment
+Email: barak6546@gmail.com
