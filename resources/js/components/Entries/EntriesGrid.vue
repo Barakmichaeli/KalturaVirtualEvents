@@ -63,6 +63,9 @@
         },
         computed: {
           pageEntries() {
+              if (!this.entries) {
+                  return [];
+              }
               let start = this.entriesPerPage * (this.currentGridPage - 1);
               return this.entries.slice(start, start + this.entriesPerPage);
           }
