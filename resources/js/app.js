@@ -8,7 +8,7 @@ Vue.use(VueLoaders);
 Vue.use({
     install (Vue) {
         Vue.prototype.$axios = Axios.create({
-            baseURL: process.env.NODE_ENV === 'production' ? "https://kaltura-home-assignment.herokuapp.com//public/api/" :
+            baseURL: process.env.NODE_ENV === 'production' ? "https://kaltura-home-assignment.herokuapp.com/public/api/" :
                                                              'https://localhost/kaltura/public/api/'
         })
     }
