@@ -20,6 +20,7 @@ class Kaltura {
     
     private function initClient () {
         $config = new \Kaltura\Client\Configuration();
+        $config->setCurlTimeout(10);
         $client = new \Kaltura\Client\Client($config);
         $ks = $client->getSessionService()->start(
             config('constants.KALTURA_SECRET'),
