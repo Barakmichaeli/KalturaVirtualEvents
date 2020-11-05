@@ -17,7 +17,7 @@
         <div class="py-5 text-center">
             <h2>ENTRIES</h2>
             <p class="lead" style="margin: 0px">List of latest 20 media entries from my Kaltura account (Barak Michaeli)</p>
-            <a style="font-size: 10px;color: #17a2b8"
+            <a style="font-size: 12px;color: #17a2b8"
                href="https://mail.google.com/mail/?view=cm&fs=1&to=barak6546@gmail.com" target="_blank">
                 Your opinion is important to me! Email me barak6546@gmail.com
             </a>
