@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87f00ec9-7122-42b5-bf2a-1b88968cbbdc" name="Default Changelist" comment="debug prod cros">
+    <list default="true" id="87f00ec9-7122-42b5-bf2a-1b88968cbbdc" name="Default Changelist" comment="debug prod">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js.LICENSE.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/asm89/stack-cors/" />
     <ignored path="$PROJECT_DIR$/vendor/brick/math/" />
@@ -184,20 +183,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webpack.mix.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="webpack.mix.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webpack.mix.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="350">
               <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -250,17 +240,17 @@
       <find>asd</find>
       <find>isLoading</find>
       <find>DEVTOOL</find>
-      <find>unknown</find>
       <find>MIX_APP_URL</find>
       <find>middlewares'</find>
       <find>middle</find>
+      <find>unknown</find>
     </findStrings>
     <dirStrings>
       <dir>C:\xampp2\htdocs\kaltura\vendor\kaltura\api-client-library\library\Kaltura\Client</dir>
       <dir>C:\xampp2\htdocs\kaltura\vendor\kaltura\api-client-library\library</dir>
-      <dir>C:\xampp2\htdocs\kaltura\resources\js</dir>
       <dir>C:\xampp2\htdocs\kaltura\resources</dir>
       <dir>C:\xampp2\htdocs\kaltura\app</dir>
+      <dir>C:\xampp2\htdocs\kaltura\resources\js</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -449,25 +439,7 @@
             <path>
               <item name="kaltura" type="b2602c69:ProjectViewProjectNode" />
               <item name="kaltura" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kaltura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kaltura" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kaltura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kaltura" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Middleware" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kaltura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kaltura" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kaltura" type="b2602c69:ProjectViewProjectNode" />
@@ -479,28 +451,6 @@
               <item name="kaltura" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kaltura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kaltura" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kaltura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kaltura" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Entries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kaltura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kaltura" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -572,7 +522,7 @@
       <workItem from="1604356448232" duration="11226000" />
       <workItem from="1604427402354" duration="29942000" />
       <workItem from="1604476496348" duration="801000" />
-      <workItem from="1604573975826" duration="1845000" />
+      <workItem from="1604573975826" duration="2112000" />
     </task>
     <task id="LOCAL-00001" summary="npm run prod">
       <created>1604522235818</created>
@@ -644,11 +594,18 @@
       <option name="project" value="LOCAL" />
       <updated>1604575452979</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="debug prod">
+      <created>1604575835099</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1604575835099</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54836000" />
+    <option name="totallyTimeSpent" value="55103000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3848" y="-8" width="1936" height="1056" extended-state="6" />
@@ -721,7 +678,8 @@
     <MESSAGE value="disable vue extensions in prod env" />
     <MESSAGE value="debugging unknown error on mobile" />
     <MESSAGE value="debug prod cros" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug prod cros" />
+    <MESSAGE value="debug prod" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug prod" />
   </component>
   <component name="WindowStateProjectService">
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1599319057466">
@@ -1013,13 +971,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/components/Entries/EntryRow.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -1074,8 +1025,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
