@@ -36,7 +36,7 @@
         methods: {
             loadEntries() {
                 this.isLoadingEntries = true;
-                this.$axios.get('http://kaltura-home-assignment.herokuapp.com/api/entries/getLatest').then(response => {
+                this.$axios.get('https://kaltura-home-assignment.herokuapp.com/api/entries/getLatest').then(response => {
                     this.entries = response.data.entries;
                     this.cachedEntries = this.entries;
                     this.isLoadingEntries = false;
@@ -51,7 +51,7 @@
                     return;
                 }
                 this.isLoadingEntries = true;
-                this.$axios.get('http://kaltura-home-assignment.herokuapp.com/api/entries/searchLatestEntry?keyword=' + keyword).then(response => {
+                this.$axios.get('https://kaltura-home-assignment.herokuapp.com/api/entries/searchLatestEntry?keyword=' + keyword).then(response => {
                     if (this.isLoadingEntries) {
                         this.entries = response.data.results;
                         this.isLoadingEntries = false;
