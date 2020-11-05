@@ -70,6 +70,13 @@
               return this.entries.slice(start, start + this.entriesPerPage);
           }
         },
+        watch: {
+            isLoading(oldVal, newVal) {
+                if (newVal) {
+                    this.currentGridPage = 1;
+                }
+            }
+        },
         methods: {
             toggleCreationSorting() {
                 this.creationSortingDirection = this.creationSortingDirection === "ASC" ? "DESC" : "ASC";
