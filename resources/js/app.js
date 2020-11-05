@@ -13,6 +13,12 @@ Vue.use({
     }
 })
 
+if (process.env.NODE_ENV === 'production') {
+    Vue.config.devtools = false
+    Vue.config.debug = false
+    Vue.config.silent = true
+}
+
 const app = new Vue({
     el: '#app',
     components: { App }
