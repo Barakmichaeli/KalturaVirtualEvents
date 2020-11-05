@@ -28,6 +28,7 @@
 <script>
     export default {
         name: 'Header',
+        props: ['isLoadingEntries'],
         data() {
           return {
               keyword: ''
@@ -36,7 +37,7 @@
         watch: {
           keyword(newKeyword, oldKeyword) {
               if (newKeyword === '' && oldKeyword !== '') {
-                  this.$emit('search', null);
+                  this.$emit('clearSearch');
               }
           }
         },

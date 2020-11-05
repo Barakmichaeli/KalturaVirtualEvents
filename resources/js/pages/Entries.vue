@@ -1,6 +1,6 @@
 <template>
     <div>
-        <app-header v-on:search="search"></app-header>
+        <app-header v-bind:isLoading="isLoadingEntries" v-on:search="search" v-on:clearSearch="clearSearch"></app-header>
         <entries-grid v-bind:isLoading="isLoadingEntries" v-bind:entries="gridEntries"></entries-grid>
         <div v-if="isLoadingEntries" class="py-5" style="text-align: center;">
             <vue-loaders name="ball-beat" color="#4c637b" scale="1.1"
@@ -17,7 +17,8 @@
         data() {
           return {
               isLoadingEntries: true,
-              entries: []
+              entries: [],
+              cachedEntries: []
           }
         },
         mounted() {
@@ -37,6 +38,7 @@
                 this.isLoadingEntries = true;
                 this.$axios.get('/entries/getLatest').then(response => {
                     this.entries = response.data.entries;
+                    this.cachedEntries = this.entries;
                     this.isLoadingEntries = false;
                 }).catch(err => {
                     alert("Unknown error occurred, please try again later...")
@@ -44,22 +46,23 @@
                 })
             },
             search(keyword) {
-                if (null === keyword) {
-                    //cleaning search..
-                    this.loadEntries();
-                } else {
+                if (this.isLoadingEntries) {
+                    return;
+                }
+                this.isLoadingEntries = true;
+                this.$axios.get('/entries/searchLatestEntry?keyword=' + keyword).then(response => {
                     if (this.isLoadingEntries) {
-                        return;
-                    }
-                    this.isLoadingEntries = true;
-                    this.$axios.get('/entries/searchLatestEntry?keyword=' + keyword).then(response => {
                         this.entries = response.data.results;
                         this.isLoadingEntries = false;
-                    }).catch(err => {
-                        alert("Unknown error occurred, please try again later...")
-                        this.isLoadingEntries = false;
-                    })
-                }
+                    }
+                }).catch(err => {
+                    alert("Unknown error occurred, please try again later...")
+                    this.isLoadingEntries = false;
+                })
+            },
+            clearSearch() {
+                this.isLoadingEntries = false;
+                this.entries = this.cachedEntries;
             }
         }
     }
