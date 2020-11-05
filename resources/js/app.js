@@ -8,7 +8,7 @@ Vue.use(VueLoaders);
 Vue.use({
     install (Vue) {
         Vue.prototype.$axios = Axios.create({
-            baseURL: "http://kaltura-home-assignment.herokuapp.com/api/"
+            baseURL: "https://kaltura-home-assignment.herokuapp.com/api/"
         })
     }
 })
