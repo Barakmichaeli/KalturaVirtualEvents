@@ -41,8 +41,7 @@
                     this.cachedEntries = this.entries;
                     this.isLoadingEntries = false;
                 }).catch(err => {
-                    alert('Error: ' + err.message)
-                    // alert("Unknown error occurred, please try again later...")
+                    alert("Unknown error occurred, please refresh...")
                     this.isLoadingEntries = false;
                 })
             },
@@ -57,8 +56,7 @@
                         this.isLoadingEntries = false;
                     }
                 }).catch(err => {
-                    alert('Error: ' + err.message)
-                    // alert("Unknown error occurred, please try again later...")
+                    alert("Unknown error occurred, please refresh...")
                     this.isLoadingEntries = false;
                 })
             },
