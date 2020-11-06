@@ -1,33 +1,35 @@
 <template>
     <div>
-        <table id="entries-grid" class="table">
-            <thead class="thead-light">
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Thumbnail</th>
-                <th scope="col">Name</th>
-                <th scope="col">Entry ID</th>
-                <th scope="col">Duration</th>
-                <th scope="col" class="sorting">Created&nbsp;
-                    <i class="fa fa-sort"
-                       @click="toggleCreationSorting"
-                       style="cursor: pointer"
-                       title="Click for changing creation time order">
-                    </i>
-                <th scope="col">Actions</th>
-            </tr>
-            </thead>
-            <tbody v-if="!isLoading">
+        <div class="table-responsive">
+            <table id="entries-grid" class="table responsive-sm">
+                <thead class="thead-light">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Thumbnail</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Entry ID</th>
+                    <th scope="col">Duration</th>
+                    <th scope="col" class="sorting">Created&nbsp;
+                        <i class="fa fa-sort"
+                           @click="toggleCreationSorting"
+                           style="cursor: pointer"
+                           title="Click for changing creation time order">
+                        </i>
+                    <th scope="col">Actions</th>
+                </tr>
+                </thead>
+                <tbody v-if="!isLoading">
                 <tr v-if="pageEntries.length === 0">
                     <td colspan="7" class="center py-4" style="text-align: center">
                         <h6>No entries available...</h6>
                     </td>
                 </tr>
                 <entry-row v-for="(entry, idx) in pageEntries" v-bind:entry="entry" :key="idx"></entry-row>
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
+
         <div v-if="!isLoading" class="grid-footer px-5">
-            Showing
             <input type="text" maxlength="2" size="1" style="text-align: center" v-model="newEntriesPerPage">
             out of {{entries.length}} entries
             <nav v-if="!isLoading && pageEntries.length > 0">

@@ -7,11 +7,9 @@
     <meta name="author" content="Barak Michaeli">
     <title>Kaltura | Virtual Events</title>
     @if(parse_url(url('/'), PHP_URL_SCHEME) == 'HTTPS')
-        <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
-        <link rel="stylesheet" href="{{ secure_asset('vendor/bootstrap/css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('vendor/bootstrap/css/bootstrap.min.css') }}">
     @else
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ asset('vendor/bootstrap/css/bootstrap.css') }}" rel="stylesheet">
+        <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     @endif
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
